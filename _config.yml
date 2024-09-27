@@ -1,0 +1,4 @@
+# domain: td-wedding.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+repository               : "td-wedding.github.io"
+# url: https://td-wedding.github.io  # the base hostname and protocol for your site, e.g. http://example.com
+# baseurl:       # place folder name if the site is served in a subfolder
