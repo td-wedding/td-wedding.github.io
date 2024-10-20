@@ -10,7 +10,7 @@ function setInvitation(name_en, name_vi, defaultlang, vi_pronoun="") {
   changeLanguage(defaultlang, before_rsvp_init=true);
   document.getElementById("guest_invitation_en").innerHTML = invitation_start_en + "<br>" + "<strong><em>" + name_en + "</em></strong>" + "<br>" + invitation_end_en;
   if (name_vi=="" && defaultlang=="vi") {
-    document.getElementById("guest_invitation_vi").innerHTML = "Đức Tuấn và Mỹ Dung Thân Mời Bạn Đến Dự Tiệc Cưới Của Bọn Mình.";
+    document.getElementById("guest_invitation_vi").innerHTML = "Đức Tuấn và Mỹ Dung Kính Mời Quý Khách Dự Tiệc Cưới Của Chúng Con.";
   }
   else if (name_en=="" && defaultlang=="en") {
     document.getElementById("guest_invitation_en").innerHTML = "Đức Tuấn & Mỹ Dung Cordially Invite You To Our Wedding Party.";
@@ -52,8 +52,8 @@ else if (window.location.hash == "#qtrung") {
 }
 else if (window.location.hash == "#man") {
   setInvitation(
-    name_="Mân",
-    name_="Mân",
+    name_="Huy Mân",
+    name_="Huy Mân",
     defaultlang="en",
   )
 }
@@ -78,6 +78,13 @@ else if (window.location.hash == "#tnguyen") {
     defaultlang="en",
   )
 }
+else if (window.location.hash == "#vvinh") {
+  setInvitation(
+    name_="Văn Vinh & ___",
+    name_="Văn Vinh & ___",
+    defaultlang="en",
+  )
+}
 else if (window.location.hash == "#bvinh") {
   setInvitation(
     name_="Bảo Vinh",
@@ -85,17 +92,24 @@ else if (window.location.hash == "#bvinh") {
     defaultlang="en",
   )
 }     
-else if (window.location.hash == "#vvinh") {
+else if (window.location.hash == "#vhung") {
   setInvitation(
-    name_="Vinh & ___",
-    name_="Vinh & ___",
+    name_="Văn Hưng",
+    name_="Văn Hưng",
     defaultlang="en",
   )
 }
-else if (window.location.hash == "#vhung") {
+else if (window.location.hash == "#hung") {
   setInvitation(
-    name_="Hưng",
-    name_="Hưng",
+    name_="bạn Hùng",
+    name_="bạn Hùng",
+    defaultlang="en",
+  )
+}
+else if (window.location.hash == "#byen") {
+  setInvitation(
+    name_="Bình Yên",
+    name_="Bình Yên",
     defaultlang="en",
   )
 }
@@ -113,38 +127,31 @@ else if (window.location.hash == "#thanh") {
     defaultlang="en",
   )
 }
+else if (window.location.hash == "#cuong") {
+  setInvitation(
+    name_="bạn Cường",
+    name_="bạn Cường",
+    defaultlang="en",
+  )
+}
 else if (window.location.hash == "#kiet") {
   setInvitation(
-    name_="Kiệt",
-    name_="Kiệt",
+    name_="bạn Kiệt",
+    name_="bạn Kiệt",
     defaultlang="en",
   )
 }
 else if (window.location.hash == "#tri") {
   setInvitation(
-    name_="Trí",
-    name_="Trí",
+    name_="bạn Trí",
+    name_="bạn Trí",
     defaultlang="en",
   )
 }
-else if (window.location.hash == "#duy") {
+else if (window.location.hash == "#khoi") {
   setInvitation(
-    name_="Duy",
-    name_="Duy",
-    defaultlang="en",
-  )
-}
-else if (window.location.hash == "#cuong") {
-  setInvitation(
-    name_="Cường",
-    name_="Cường",
-    defaultlang="en",
-  )
-}
-else if (window.location.hash == "#hoang") {
-  setInvitation(
-    name_="Hoàng",
-    name_="Hoàng",
+    name_="bạn Khôi",
+    name_="bạn Khôi",
     defaultlang="en",
   )
 }
@@ -152,13 +159,6 @@ else if (window.location.hash == "#tvinh") {
   setInvitation(
     name_="Trung Vinh",
     name_="Trung Vinh",
-    defaultlang="en",
-  )
-}
-else if (window.location.hash == "#byen") {
-  setInvitation(
-    name_="Bình Yên",
-    name_="Bình Yên",
     defaultlang="en",
   )
 }
@@ -178,43 +178,43 @@ else if (window.location.hash == "#phat") {
 }
 else if (window.location.hash == "#linh") {
   setInvitation(
-    name_="Linh",
-    name_="Linh",
+    name_="bạn Linh",
+    name_="bạn Linh",
     defaultlang="en",
   )
 }
 else if (window.location.hash == "#mai") {
   setInvitation(
-    name_="Mai",
-    name_="Mai",
+    name_="bạn Mai",
+    name_="bạn Mai",
     defaultlang="en",
   )
 }
 else if (window.location.hash == "#thu") {
   setInvitation(
-    name_="Thư",
-    name_="Thư",
+    name_="bạn Thư",
+    name_="bạn Thư",
     defaultlang="en",
   )
 }
 else if (window.location.hash == "#tram") {
   setInvitation(
-    name_="Trâm",
-    name_="Trâm",
+    name_="bạn Trâm",
+    name_="bạn Trâm",
     defaultlang="en",
   )
 }
 else if (window.location.hash == "#phuoc") {
   setInvitation(
-    name_="Phước",
-    name_="Phước",
+    name_="bạn Phước",
+    name_="bạn Phước",
     defaultlang="en",
   )
 }
 else if (window.location.hash == "#chau") {
   setInvitation(
-    name_="Châu",
-    name_="Châu",
+    name_="bạn Châu",
+    name_="bạn Châu",
     defaultlang="en",
   )
 }
@@ -227,29 +227,50 @@ else if (window.location.hash == "#bchau") {
 }
 else if (window.location.hash == "#quynh") {
   setInvitation(
-    name_="Quỳnh",
-    name_="Quỳnh",
+    name_="bạn Quỳnh",
+    name_="bạn Quỳnh",
     defaultlang="en",
   )
 }
 else if (window.location.hash == "#tien") {
   setInvitation(
-    name_="Tiên",
-    name_="Tiên",
+    name_="Thủy Tiên",
+    name_="Thủy Tiên",
     defaultlang="en",
   )
 }
 else if (window.location.hash == "#khanh") {
   setInvitation(
-    name_="Khánh",
-    name_="Khánh",
+    name_="Quốc Khánh",
+    name_="Quốc Khánh",
     defaultlang="en",
   )
 }
-else if (window.location.hash == "#hung") {
+else if (window.location.hash == "#hoang") {
   setInvitation(
-    name_="Hùng",
-    name_="Hùng",
+    name_="Minh Hoàng",
+    name_="Minh Hoàng",
+    defaultlang="en",
+  )
+}
+else if (window.location.hash == "#phu") {
+  setInvitation(
+    name_="Phú",
+    name_="Phú",
+    defaultlang="en",
+  )
+}
+else if (window.location.hash == "#datuyen") {
+  setInvitation(
+    name_="Đạt & Uyên",
+    name_="Đạt & Uyên",
+    defaultlang="en",
+  )
+}
+else if (window.location.hash == "#knguyen") {
+  setInvitation(
+    name_="Kim Nguyên",
+    name_="Kim Nguyên",
     defaultlang="en",
   )
 }
@@ -281,20 +302,8 @@ else if (window.location.hash == "#tdat") {
     defaultlang="en",
   )
 }
-else if (window.location.hash == "#datuyen") {
-  setInvitation(
-    name_="Đạt & Uyên",
-    name_="Đạt & Uyên",
-    defaultlang="en",
-  )
-}
-else if (window.location.hash == "#knguyen") {
-  setInvitation(
-    name_="Kim Nguyên",
-    name_="Kim Nguyên",
-    defaultlang="en",
-  )
-}
+
+
 
 else if (window.location.hash == "#cngaatung") {
   setInvitation(
@@ -363,23 +372,23 @@ else if (window.location.hash == "#shahidah") {
 }
 else if (window.location.hash == "#profchng") {
   setInvitation(
-    name_="Prof. Chng",
-    name_="Prof. Chng",
+    name_="Prof. Chng & Family",
+    name_="Prof. Chng & Family",
     defaultlang="en",
   )
 }
 
 else if (window.location.hash == "#quyen") {
   setInvitation(
-    name_="V/C Quyên",
-    name_="V/C Quyên",
+    name_="Quyên & Long",
+    name_="Quyên & Long",
     defaultlang="en",
   )
 }
 else if (window.location.hash == "#nhu") {
   setInvitation(
-    name_="Như",
-    name_="Như",
+    name_="Trúc Như",
+    name_="Trúc Như",
     defaultlang="en",
   )
 }
@@ -392,15 +401,58 @@ else if (window.location.hash == "#nphuong") {
 }
 else if (window.location.hash == "#minh") {
   setInvitation(
-    name_="Minh",
-    name_="Minh",
+    name_="Nguyệt Minh",
+    name_="Nguyệt Minh",
     defaultlang="en",
   )
 }
 else if (window.location.hash == "#quan") {
   setInvitation(
-    name_="Quân",
-    name_="Quân",
+    name_="Minh Quân & ___",
+    name_="Minh Quân & ___",
+    defaultlang="en",
+  )
+}
+else if (window.location.hash == "#duy") {
+  setInvitation(
+    name_="Công Duy",
+    name_="Công Duy",
+    defaultlang="en",
+  )
+}
+
+else if (window.location.hash == "#uyen") {
+  setInvitation(
+    name_="Uyên & ___",
+    name_="Uyên & ___",
+    defaultlang="en",
+  )
+}
+else if (window.location.hash == "#hthuong") {
+  setInvitation(
+    name_="Hoài Thương",
+    name_="Hoài Thương",
+    defaultlang="en",
+  )
+}
+else if (window.location.hash == "#baoan") {
+  setInvitation(
+    name_="Bảo An",
+    name_="Bảo An",
+    defaultlang="en",
+  )
+}
+else if (window.location.hash == "#minhnluat") {
+  setInvitation(
+    name_="Phương Minh & Thanh Luận",
+    name_="Phương Minh & Thanh Luận",
+    defaultlang="en",
+  )
+}
+else if (window.location.hash == "#vcnthao") {
+  setInvitation(
+    name_="V/C Nhựt Thảo",
+    name_="V/C Nhựt Thảo",
     defaultlang="en",
   )
 }
