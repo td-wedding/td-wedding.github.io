@@ -423,8 +423,8 @@ else if (window.location.hash == "#duy") {
 
 else if (window.location.hash == "#uyen") {
   setInvitation(
-    name_="Uyên & ___",
-    name_="Uyên & ___",
+    name_="Uyên & Khôi",
+    name_="Uyên & Khôi",
     defaultlang="en",
   )
 }
@@ -451,8 +451,8 @@ else if (window.location.hash == "#minhnluat") {
 }
 else if (window.location.hash == "#vcnthao") {
   setInvitation(
-    name_="V/C Nhựt Thảo",
-    name_="V/C Nhựt Thảo",
+    name_="Thảo & Luật",
+    name_="Thảo & Luật",
     defaultlang="en",
   )
 }
