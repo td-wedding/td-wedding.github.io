@@ -377,7 +377,13 @@ else if (window.location.hash == "#profchng") {
     defaultlang="en",
   )
 }
-
+else if (window.location.hash == "#vamsi") {
+  setInvitation(
+    name_="Vamsi M.",
+    name_="Vamsi M.",
+    defaultlang="en",
+  )
+}
 else if (window.location.hash == "#quyen") {
   setInvitation(
     name_="Quyên & Long",
